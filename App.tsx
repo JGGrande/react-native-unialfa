@@ -1,12 +1,24 @@
 import { ScrollView } from "react-native";
-import ProfileScreen from "./app/screens/profile";
-import HomeScreen from "./app/screens/home";
+import ProfileScreen from "./app/(tabs)/profile";
+import HomeScreen from "./app/(tabs)/home";
 
 export default function App() {
-  return (
-    <>
-      {/* <ProfileScreen /> */}
-      <HomeScreen />
-    </>
-  );
+  let telaAtual = "home";
+
+  if (telaAtual === "home") {
+    return (
+      <>
+        <HomeScreen />
+      </>
+    );
+  }
+
+  if (telaAtual === "profile") {
+    return (
+      <>
+        <ProfileScreen />
+      </>
+    );
+  }
+
 }

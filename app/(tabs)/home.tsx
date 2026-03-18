@@ -3,6 +3,7 @@ import { FlatList, Image, StyleSheet, Text, TextInput, TouchableOpacity, View } 
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { DADOS_EVENTOS } from '../../mocks/event';
 import { Event } from '../../types/event';
+import { FontAwesome } from '@expo/vector-icons';
 
 type RenderizarEventoProps = {
   item: Event;
@@ -20,6 +21,7 @@ const renderizarEvento = ({ item }: RenderizarEventoProps) => (
       <View style={styles.rodapeCard}>
         <Text style={styles.precoTexto}>{item.preco}</Text>
         <TouchableOpacity style={styles.botaoComprar}>
+          <FontAwesome name="home" size={24} color="white" />
           <Text style={styles.textoBotao}>Comprar</Text>
         </TouchableOpacity>
       </View>

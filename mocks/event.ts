@@ -25,13 +25,5 @@ export const DADOS_EVENTOS: Event[] = [
     preco: 'R$ 50,00',
     imagem: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29uZmVyZW5jZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
   },
-   {
-    id: '3',
-    titulo: 'Latinoware 2026',
-    data: 'Sex, 10 Abr • 19:00',
-    local: 'Auditório Principal - Campus',
-    preco: 'R$ 50,00',
-    imagem: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29uZmVyZW5jZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
-  },
 ];
 
