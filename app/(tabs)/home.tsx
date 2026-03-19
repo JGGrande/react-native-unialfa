@@ -21,7 +21,7 @@ const renderizarEvento = ({ item }: RenderizarEventoProps) => (
       <View style={styles.rodapeCard}>
         <Text style={styles.precoTexto}>{item.preco}</Text>
         <TouchableOpacity style={styles.botaoComprar}>
-          <FontAwesome name="home" size={24} color="white" />
+          <FontAwesome name="shopping-cart" size={24} color="white" />
           <Text style={styles.textoBotao}>Comprar</Text>
         </TouchableOpacity>
       </View>
@@ -139,6 +139,9 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     paddingHorizontal: 20,
     borderRadius: 6,
+    flexDirection: "row-reverse",
+    alignContent: "center",
+    gap: 12
   },
   textoBotao: {
     color: '#FFFFFF',

@@ -1,9 +1,12 @@
+import { useRouter } from "expo-router";
 import { Alert, Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function ProfileScreen() {
+    const router = useRouter();
+
     function onSairPress() {
-        Alert.alert("Sair", "Voce deseja mesmo sair do melhor app do mundo?")
+        router.push("/login");
     }
     
     return (
