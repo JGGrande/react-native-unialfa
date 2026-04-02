@@ -6,7 +6,7 @@ export default function ProfileScreen() {
     const router = useRouter();
 
     function onSairPress() {
-        router.push("/login");
+        router.replace("/login");
     }
     
     return (
